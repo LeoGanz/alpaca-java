@@ -1,4 +1,4 @@
-<p align="center"><a href="https://petersoj.github.io/alpaca-java/" target="_blank"><img src=".github/image/logo.png" alt="Logo"></a></p>
+<p align="center"><a href="https://petersoj.github.io/alpaca-java/" target="_blank"><img src="https://raw.githubusercontent.com/Petersoj/alpaca-java/master/.github/image/logo.png" alt="Logo"></a></p>
 <p align="center">
     <a href="https://github.com/Petersoj/alpaca-java" target="_blank"><img alt="GitHub Repository" src="https://img.shields.io/badge/GitHub-000000?logo=github"></a>
     <a href="https://search.maven.org/artifact/net.jacobpeterson.alpaca/alpaca-java" target="_blank"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/net.jacobpeterson.alpaca/alpaca-java"></a>
@@ -7,7 +7,7 @@
 </p>
 
 # Overview
-This library is a Java client implementation of the <a href="https://alpaca.markets/">Alpaca</a> API. Alpaca lets you trade with algorithms, connect with apps, and build services all with a commission-free trading API for stocks, crypto, and options. This library uses the [Alpaca OpenAPI Specifications](https://docs.alpaca.markets/v1.1/openapi) to generate clients for the REST API with the [OkHttp](https://square.github.io/okhttp/) library, but implements the websocket and SSE streaming interface using a custom implementation with the [OkHttp](https://square.github.io/okhttp/) library. This library is community developed and if you have any questions, please ask them on [Github Discussions](https://github.com/Petersoj/alpaca-java/discussions), the [Alpaca Slack #dev-alpaca-java channel](https://alpaca.markets/slack), or on the [Alpaca Forums](https://forum.alpaca.markets/). This library strives to provide the complete Alpaca API as a Java client implementation, so open a [new issue](https://github.com/Petersoj/alpaca-java/issues) or [new pull request](https://github.com/Petersoj/alpaca-java/pulls) if you find something missing.
+This library is a Java client implementation of the [Alpaca](https://alpaca.markets) API. Alpaca lets you trade with algorithms, connect with apps, and build services all with a commission-free trading API for stocks, crypto, and options. This library uses the [Alpaca OpenAPI Specifications](https://docs.alpaca.markets/openapi) to generate clients for the REST API with the [OkHttp](https://square.github.io/okhttp/) library, but implements the websocket and SSE streaming interface using a custom implementation with the [OkHttp](https://square.github.io/okhttp/) library. This library is community developed and if you have any questions, please ask them on [Github Discussions](https://github.com/Petersoj/alpaca-java/discussions), the [Alpaca Slack #dev-alpaca-java channel](https://alpaca.markets/slack), or on the [Alpaca Forums](https://forum.alpaca.markets/). This library strives to provide the complete Alpaca API as a Java client implementation, so open a [new issue](https://github.com/Petersoj/alpaca-java/issues) or [new pull request](https://github.com/Petersoj/alpaca-java/pulls) if you find something missing.
 
 Give this repository a star ⭐ if it helped you build a trading algorithm in Java!
 
@@ -15,7 +15,7 @@ Give this repository a star ⭐ if it helped you build a trading algorithm in Ja
 If you are using Gradle as your build tool, add the following dependency to your `build.gradle` file:
 
 ```
-implementation group: "net.jacobpeterson.alpaca", name: "alpaca-java", version: "10.0.0"
+implementation group: "net.jacobpeterson.alpaca", name: "alpaca-java", version: "10.0.1"
 ```
 
 If you are using Maven as your build tool, add the following dependency to your `pom.xml` file:
@@ -24,7 +24,7 @@ If you are using Maven as your build tool, add the following dependency to your 
 <dependency>
     <groupId>net.jacobpeterson.alpaca</groupId>
     <artifactId>alpaca-java</artifactId>
-    <version>10.0.0</version>
+    <version>10.0.1</version>
 </dependency>
 ```
 
@@ -110,7 +110,7 @@ System.out.println("PnL from Apple trade: " +
 ```
 
 ## [`Market Data API`](src/main/java/net/jacobpeterson/alpaca/rest/marketdata/AlpacaMarketDataAPI.java)
-The [`Market Data API`](src/main/java/net/jacobpeterson/alpaca/rest/marketdata/AlpacaMarketDataAPI.java) is used getting market data for stocks, cryptocurrencies, options, and more. Refer to the [Javadoc](https://javadoc.io/doc/net.jacobpeterson.alpaca/alpaca-java/latest/net/jacobpeterson/alpaca/rest/marketdata/AlpacaMarketDataAPI.html) for a list of all available method signatures.
+The [`Market Data API`](src/main/java/net/jacobpeterson/alpaca/rest/marketdata/AlpacaMarketDataAPI.java) is used for getting market data for stocks, cryptocurrencies, options, and more. Refer to the [Javadoc](https://javadoc.io/doc/net.jacobpeterson.alpaca/alpaca-java/latest/net/jacobpeterson/alpaca/rest/marketdata/AlpacaMarketDataAPI.html) for a list of all available method signatures.
 
 Example usage:
 ```java

@@ -83,6 +83,12 @@ javadoc {
     options.addStringOption("link", "https://docs.oracle.com/en/java/javase/17/docs/api/")
 }
 
+tasks.register('printRuntimeClasspath') {
+    doFirst {
+        sourceSets.main.runtimeClasspath.each { println it}
+    }
+}
+
 //
 // BEGIN Alpaca OpenAPI Specification (OAS) client generation
 //

@@ -53,7 +53,7 @@ public class EventsApiSSE {
     }
 
     /**
-     * See {@link EventsApi#getV1EventsNta(String, String, String, Integer, Integer, String, String, Boolean)}.
+     * See .
      *
      * @return a {@link SSERequest}
      */
@@ -61,7 +61,7 @@ public class EventsApiSSE {
             Integer untilId, String sinceUlid, String untilUlid, Boolean includePreprocessing,
             SSEListener<Object> sseListener) throws ApiException { // TODO OpenAPI response type is broken
         final Request request = eventsAPI.getV1EventsNtaCall(id, since, until, sinceId, untilId, sinceUlid, untilUlid,
-                includePreprocessing, null).request();
+                includePreprocessing, null, null).request();
         return new SSERequest(eventSourceFactory.newEventSource(request, createEventSourceListener(sseListener,
                 new TypeToken<Object>() {}.getType()))); // TODO OpenAPI response type is broken
     }
